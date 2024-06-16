@@ -2,9 +2,9 @@ import React from "react";
 
 const CardComponents = ({ img, title }) => {
   return (
-    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="max-w-96 bg-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
-        <img class="rounded-t-lg" src={img} alt="" />
+        <img className="rounded-t-lg " src={img} alt="" />
       </a>
       <div class="p-5">
         <a href="#">
