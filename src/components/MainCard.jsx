@@ -1,6 +1,6 @@
 import React from "react";
 
-const CardComponents = ({ img, title, onClickCard }) => {
+const MainCard = ({ img, title, onClickCard }) => {
   return (
     <div
       class="max-w-96 bg-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
@@ -42,4 +42,4 @@ const CardComponents = ({ img, title, onClickCard }) => {
   );
 };
 
-export default CardComponents;
+export default MainCard;

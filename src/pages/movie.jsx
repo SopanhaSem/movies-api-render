@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import { BASE_URL } from "../utils/baseUrl";
 import CardComponents from "../components/CardComponents";
 import { LoadingComponents } from "../components/LoadingComponents";
+import { useNavigate } from "react-router-dom";
 
 const MoviePage = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [movies, setMovies] = useState([]);
+  const navigate = useNavigate();
 
   async function fetchData() {
     try {
@@ -17,8 +19,12 @@ const MoviePage = () => {
       setIsLoading(false);
     } catch (error) {
       console.log(error);
-      setIsLoading(false); // Ensure loading state is turned off on error
+      setIsLoading(false);
     }
+  }
+
+  function handleOnClickCard(data) {
+    navigate("/detail", { state: data });
   }
 
   useEffect(() => {
@@ -39,6 +45,7 @@ const MoviePage = () => {
                   ? `https://image.tmdb.org/t/p/w500${m.poster_path}`
                   : "default_image_path.jpg"
               }
+              onClickCard={() => handleOnClickCard(m)}
               title={m.title}
             />
           ))}

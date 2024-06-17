@@ -7,6 +7,8 @@ import MainComponents from "./components/MainComponents.jsx";
 import AboutPage from "./pages/about.jsx";
 import MoviePage from "./pages/movie.jsx";
 import { ServicePage } from "./pages/service.jsx";
+import CardComponents from "./components/CardComponents.jsx";
+import CardDetail from "./components/CardDetail.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,12 +24,16 @@ const router = createBrowserRouter([
         element: <AboutPage />,
       },
       {
-        path: "movie",
+        path: "/movie",
         element: <MoviePage />,
       },
       {
-        path: "service",
+        path: "/service",
         element: <ServicePage />,
+      },
+      {
+        path: "/detail",
+        element: <CardDetail />,
       },
     ],
   },
