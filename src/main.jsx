@@ -28,12 +28,12 @@ const router = createBrowserRouter([
         element: <MoviePage />,
       },
       {
-        path: "/service",
-        element: <ServicePage />,
-      },
-      {
         path: "/detail",
         element: <CardDetail />,
+      },
+      {
+        path: "/service",
+        element: <ServicePage />,
       },
     ],
   },
