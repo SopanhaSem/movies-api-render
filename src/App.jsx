@@ -23,7 +23,7 @@ function App() {
   }, []);
 
   return (
-    <div className="w-full flex flex-wrap justify-center p-5">
+    <div className="w-full flex flex-wrap justify-center p-5 bg-white dark:bg-gray-800">
       {isLoading ? (
         <LoadingComponents />
       ) : (

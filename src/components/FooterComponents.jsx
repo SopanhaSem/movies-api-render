@@ -9,7 +9,7 @@ const FooterComponents = () => {
             <div className="mb-6 md:mb-0">
               <a href="https://flowbite.com/" className="flex items-center">
                 <img
-                  src="https://flowbite.com/docs/images/logo.svg"
+                  src="https://imgs.search.brave.com/GcbagJctCYd0OW2WImsIDdMJ3Bp3QPHWZC1FULNZQ1c/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL0kvaW1kYi1p/bnRlcm5ldC1tb3Zp/ZS1kYXRhYmFzZS1s/b2dvLTAyNUQzNDU3/MEUtc2Vla2xvZ28u/Y29tLnBuZw"
                   className="h-8 me-3"
                   alt="FlowBite Logo"
                 />

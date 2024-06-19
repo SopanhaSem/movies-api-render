@@ -69,12 +69,12 @@ const NavbarComponents = () => {
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
+              src="https://imgs.search.brave.com/GcbagJctCYd0OW2WImsIDdMJ3Bp3QPHWZC1FULNZQ1c/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL0kvaW1kYi1p/bnRlcm5ldC1tb3Zp/ZS1kYXRhYmFzZS1s/b2dvLTAyNUQzNDU3/MEUtc2Vla2xvZ28u/Y29tLnBuZw"
               className="h-8"
               alt="Flowbite Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Flowbite
+              KhMovies
             </span>
           </a>
           <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ">
@@ -89,7 +89,7 @@ const NavbarComponents = () => {
               <span className="sr-only">Open user menu</span>
               <img
                 className="w-8 h-8 rounded-full"
-                src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
+                src="https://avatars.githubusercontent.com/u/147358810?s=400&u=63a63d885810dac6fb0e25ab4ac9eefcfb306420&v=4"
                 alt="user photo"
               />
             </button>

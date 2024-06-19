@@ -3,15 +3,15 @@ import React from "react";
 const AboutPage = () => {
   return (
     <>
-      <section className="font-poppins bg-white dark:bg-gray-900 relative">
+      <section className="font-poppins bg-white dark:bg-gray-900 ">
         <div
           id="container"
-          className=" w-auto flex px-24 justify-center relative"
+          className=" w-auto flex px-24 justify-center "
         />
 
         <div
           id="container"
-          className="p-20 sm:p-16 md:p-20 lg:p-24 xl:p-20 w-auto flex flex-col md:flex-row px-4 sm:px-8 md:px-24 lg:px-24 xl:px-24 relative"
+          className="p-20 sm:p-16 md:p-20 lg:p-24 xl:p-20 w-auto flex flex-col md:flex-row px-4 sm:px-8 md:px-24 lg:px-24 xl:px-24"
         >
           <div className="mr-10">
             <img
@@ -21,11 +21,11 @@ const AboutPage = () => {
             />
           </div>
           <div className="w-full sm:w-[70%] md:w-[60%] lg:w-[50%]">
-            <h1 className="text-white font-bold text-3xl mt-6 mb-8">
+            <h1 className="text-gray-900 dark:text-white font-bold text-3xl mt-6 mb-8">
               Hey it's me, Aydin Vesali Moghaddam
             </h1>
 
-            <p className="text-white w-full sm:w-[35rem] md:w-[30rem] lg:w-[25rem] mb-10">
+            <p className="text-gray-900 dark:text-white w-full sm:w-[35rem] md:w-[30rem] lg:w-[25rem] mb-10">
               I'm Aydin, a 18-year-old high schooler with a passion for web
               development. My tech journey started with HTML, CSS, and
               JavaScript, and I was hooked by the thrill of crafting dynamic,
@@ -43,10 +43,10 @@ const AboutPage = () => {
                 rel="noopener"
                 target="_blank"
                 href="https://github.com/iam-aydin"
-                className="bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white"
+                className="bg-gray-800  rounded-lg p-5 w-64 flex items-center gap-2 text-white"
               >
                 <img
-                  className="mr-2 hover:scale-105 transition duration-300 ease-in-out"
+                  className="mr-2 hover:scale-105 transition duration-300 ease-in-out "
                   src="https://ucarecdn.com/1f465c47-4849-4935-91f4-29135d8607af/github2.svg"
                   width="20px"
                   height="20px"

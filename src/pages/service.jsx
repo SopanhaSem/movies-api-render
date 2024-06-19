@@ -3,7 +3,7 @@ import React from "react";
 export const ServicePage = () => {
   return (
     <>
-      <div className="bg-gray-700 px-4 py-16 min-h-screen">
+      <div className=" dark:bg-gray-800 bg-white px-4 py-16 min-h-screen">
         <div
           aria-hidden="true"
           className="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-20"
@@ -13,7 +13,7 @@ export const ServicePage = () => {
         </div>
         <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
           <div className="mb-10 space-y-4 px-6 md:px-0">
-            <h2 className="text-center text-2xl font-bold text-white sm:text-3xl md:text-4xl">
+            <h2 className="text-center text-2xl font-bold dark:text-white text-gray-800 sm:text-3xl md:text-4xl">
               Pricing
             </h2>
           </div>

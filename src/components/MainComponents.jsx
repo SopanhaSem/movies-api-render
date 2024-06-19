@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 const MainComponents = () => {
   return (
     <>
-      <header>
+      <header className=" sticky top-0 left-0">
         <NavbarComponents />
       </header>
       <main>
