@@ -7,8 +7,10 @@ import MainComponents from "./components/MainComponents.jsx";
 import AboutPage from "./pages/about.jsx";
 import MoviePage from "./pages/movie.jsx";
 import { ServicePage } from "./pages/service.jsx";
-import CardComponents from "./components/CardComponents.jsx";
 import CardDetail from "./components/CardDetail.jsx";
+import Register from "./pages/register.jsx";
+import { store } from "./app/store";
+import { Provider } from "react-redux";
 
 const router = createBrowserRouter([
   {
@@ -28,7 +30,7 @@ const router = createBrowserRouter([
         element: <MoviePage />,
       },
       {
-        path: "/detail",
+        path: "/movie/:id",
         element: <CardDetail />,
       },
       {
@@ -37,9 +39,15 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/register",
+    element: <Register />,
+  },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );

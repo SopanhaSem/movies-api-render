@@ -2,7 +2,6 @@ import React from "react";
 import { useEffect } from "react";
 import { Navbar } from "flowbite-react";
 import { NavLink } from "react-router-dom";
-
 const NavbarComponents = () => {
   const menuList = [
     {
@@ -20,6 +19,10 @@ const NavbarComponents = () => {
     {
       path: "/service",
       title: "Services",
+    },
+    {
+      path: "/register",
+      title: "Register",
     },
   ];
 
@@ -64,19 +67,21 @@ const NavbarComponents = () => {
     <Navbar className="w-full bg-white border-gray-200 dark:bg-gray-900">
       <nav className="w-full bg-white border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
-            href="https://flowbite.com/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <img
-              src="https://imgs.search.brave.com/GcbagJctCYd0OW2WImsIDdMJ3Bp3QPHWZC1FULNZQ1c/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL0kvaW1kYi1p/bnRlcm5ldC1tb3Zp/ZS1kYXRhYmFzZS1s/b2dvLTAyNUQzNDU3/MEUtc2Vla2xvZ28u/Y29tLnBuZw"
-              className="h-8"
-              alt="Flowbite Logo"
-            />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              KhMovies
-            </span>
-          </a>
+          <NavLink to="/">
+            <a
+              href=""
+              className="flex items-center space-x-3 rtl:space-x-reverse"
+            >
+              <img
+                src="https://imgs.search.brave.com/GcbagJctCYd0OW2WImsIDdMJ3Bp3QPHWZC1FULNZQ1c/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL0kvaW1kYi1p/bnRlcm5ldC1tb3Zp/ZS1kYXRhYmFzZS1s/b2dvLTAyNUQzNDU3/MEUtc2Vla2xvZ28u/Y29tLnBuZw"
+                className="h-8"
+                alt="Flowbite Logo"
+              />
+              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                KhMovies
+              </span>
+            </a>
+          </NavLink>
           <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ">
             <button
               type="button"
@@ -128,6 +133,14 @@ const NavbarComponents = () => {
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                   >
                     Earnings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >
+                    Sign In
                   </a>
                 </li>
                 <li>

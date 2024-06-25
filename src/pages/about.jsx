@@ -1,13 +1,11 @@
 import React from "react";
+import TableComponent from "../components/TableComponents";
 
 const AboutPage = () => {
   return (
     <>
       <section className="font-poppins bg-white dark:bg-gray-900 ">
-        <div
-          id="container"
-          className=" w-auto flex px-24 justify-center "
-        />
+        <div id="container" className=" w-auto flex px-24 justify-center " />
 
         <div
           id="container"
@@ -85,6 +83,11 @@ const AboutPage = () => {
                 <span>Follow me on Twitter</span>
               </a>
             </div>
+          </div>
+        </div>
+        <div className="w-full h-auto flex items-center justify-center">
+          <div className="container">
+            <TableComponent />
           </div>
         </div>
       </section>

@@ -1,9 +1,19 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
-
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { BASE_URL } from "../utils/baseUrl";
 const CardDetail = () => {
-  const location = useLocation();
-  const movie = location.state;
+  const [movies, setMovie] = useState({});
+  const param = useParams();
+  async function fetchData() {
+    const response = await fetch(BASE_URL + "movie/" + param.id);
+    const data = await response.json();
+    setMovie(data.results);
+    console.log(data.results);
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <div className="bg-white dark:bg-gray-800">
       <div className="max-w-screen-lg mx-auto p-5 sm:p-10 md:p-16 ">
@@ -12,22 +22,22 @@ const CardDetail = () => {
             href="#"
             className="max-w-3xl mx-auto text-xl sm:text-4xl font-semibold inline-block hover:text-indigo-600 transition duration-500 ease-in-out mb-2"
           >
-            {movie.title}
+            {movies.results.title}
           </a>
 
           <a href="#">
             <img
               className="w-full my-4"
               src={
-                movie.poster_path
-                  ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+                movies.results.poster_path
+                  ? `https://image.tmdb.org/t/p/w500${movies.results.poster_path}`
                   : "default_image_path.jpg"
               }
               alt="Sunset in the mountains"
             />
           </a>
           <p className="text-gray-700 text-base leading-8 max-w-2xl mx-auto">
-            {movie.overview}
+            {movies.results.overview}
           </p>
           <div className="py-5 text-sm font-regular text-gray-900 flex items-center justify-center">
             <span className="mr-3 flex flex-row items-center">
